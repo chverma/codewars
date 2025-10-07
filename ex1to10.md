@@ -67,8 +67,27 @@ Buzz
 ## 3. RoboCup Ball Position
 **Puntos:** 3
 
-### Introducción
-Un sistema de cámaras estéreo mide la posición 3D del balón en un campo de fútbol pero con referencia a las cámaras, no al centro del campo. Se dan posiciones conocidas de referencia y sus valores en coordenadas de cámara. Dada una posición en la referencia de cámara, se necesita devolver la posición en el campo o "INVALID POSITION" si no corresponde a una posición conocida.
+# Introducción
+
+Esta es una historia real. Todos los personajes descritos en esta historia han sido modificados para proteger su identidad.
+
+En 2011, mientras participábamos en la competencia RoboCup de fútbol (una competencia de robots autónomos para jugar fútbol), desarrollamos cámaras estereoscópicas (es decir, dos cámaras) montadas en el techo que podían seguir la pelota y proporcionar las coordenadas 3D de la pelota (X, Y, Z). 
+
+Solo había un problema: la posición se daba usando una de las cámaras como referencia, pero necesitábamos que el centro del campo fuera la referencia.
+
+Por lo tanto, tomamos algunas mediciones:
+
+- Cuando la pelota estaba en la posición (0, 0, 0) del campo, el sistema de cámaras estereoscópicas marcó (-0.378094, -0.044534, 3.54707).
+- Cuando la pelota estaba en la posición (0, 0, 1) del campo, el sistema de cámaras estereoscópicas marcó (-0.460408, -0.74951, 2.91714).
+- Cuando la pelota estaba en la posición (-1, 0, 0) del campo, el sistema de cámaras estereoscópicas marcó (0.427701, -0.555208, 3.98178).
+- Cuando la pelota estaba en la posición (0, 1, 0) del campo, el sistema de cámaras estereoscópicas marcó (0.288779, 0.451449, 2.93639).
+- Cuando la pelota estaba en la posición (1, 1, 0) del campo, el sistema de cámaras estereoscópicas marcó (-0.517016, 0.962123, 2.50168).
+- Cuando la pelota estaba en la posición (1, 0, 0) del campo, el sistema de cámaras estereoscópicas marcó (-1.183889, 0.46614, 3.11236).
+- Cuando la pelota estaba en la posición (-1, -1, 0) del campo, el sistema de cámaras estereoscópicas marcó (0.77, -0.208, 1.8878).
+- Cuando la pelota estaba en la posición (1, -1, 1) del campo, el sistema de cámaras estereoscópicas marcó (1.111, 0.872364, -1.6786).
+
+Estos valores son las mediciones reales, así que no esperes que los resultados sean números enteros redondeados.
+
 
 ### Entrada
 Una línea: tres enteros separados por comas, entre -1 y 1.
@@ -76,7 +95,7 @@ Una línea: tres enteros separados por comas, entre -1 y 1.
 ### Salida
 Si la posición corresponde a una de las posiciones conocidas, imprimir las coordenadas de la cámara con 6 decimales. Si no, imprimir: "INVALID POSITION".
 
-### Ejemplo
+### Ejemplo 1
 Entrada:
 ```
 0,0,1
@@ -86,6 +105,25 @@ Salida:
 -0.460408,-0.749510,2.917140
 ```
 
+### Ejemplo 2
+Entrada:
+```
+0,1,0
+```
+Salida:
+```
+0.288779,0.451449,2.936390
+```
+
+### Ejemplo 3
+Entrada:
+```
+-1,0,1
+```
+Salida:
+```
+INVALID POSITION
+```
 
 ***
 
