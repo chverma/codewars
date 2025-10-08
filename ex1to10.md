@@ -130,24 +130,29 @@ INVALID POSITION
 ## 4. DAC Conversion
 **Puntos:** 4
 
-### Introducción
-Un convertidor digital a analógico (DAC) de 10 bits convierte un valor decimal (0 a 1023) en un voltaje analógico (0 a 5 V). Se quiere hacer un programa que reciba el valor decimal y devuelva el voltaje analógico correspondiente con dos decimales.
+# Introducción
 
-### Entrada
-Un entero positivo (valor digital).
+En electrónica, un convertidor digital a analógico (DAC) es un dispositivo que transforma una señal binaria en una salida analógica. Por ejemplo, un DAC de 8 bits puede representar hasta 256 valores diferentes, con cada paso que difiere en 1/256 del valor a escala completa, lo que define la resolución del sistema.
 
-### Salida
-El voltaje analógico correspondiente seguido de " V".
+Vamos a crear un programa que convierta una representación decimal de una señal en el nivel de voltaje analógico correspondiente producido por un DAC. Dado un rango de valores de 0 a 1023 y un rango de referencia de 0 a 5.00 voltios, el valor y la referencia son directamente proporcionales.
 
-### Ejemplo
-Entrada:
-```
-356
-```
-Salida:
-```
-1.74 V
-```
+## Entrada
+
+La entrada es un número entero positivo con resolución de 10 bits.
+
+## Salida
+
+La salida es el voltaje de referencia redondeado a dos decimales.
+
+## Ejemplos
+
+| Entrada | Salida  |
+|---------|---------|
+| 0       | 0.00 V  |
+| 1023    | 5.00 V  |
+| 356     | 1.74 V  |
+| 2       | 0.01 V  |
+
 
 
 ***
