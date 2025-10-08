@@ -159,29 +159,35 @@ La salida es el voltaje de referencia redondeado a dos decimales.
 
 ## 5. Recover Information
 **Puntos:** 4
+# Introducción
 
-### Introducción
-Recuperar datos de un disco RAID a partir de la información redundante con operación NAND entre dos cadenas binarias (contenido de disco 1 y disco 2).
+Estás trabajando en la recuperación de datos de un sistema RAID que ha sufrido corrupción en uno de sus discos duros. En este sistema, la información redundante se almacena en un disco adicional para asegurar la integridad de los datos. Tu tarea es restaurar la información del disco duro dañado utilizando el disco de redundancia.
 
-La NAND está definida así:
-- 0 NAND 0 = 1
-- 0 NAND 1 = 1
-- 1 NAND 0 = 1
-- 1 NAND 1 = 0
+La primera línea de entrada representa el contenido del disco duro RAID que funciona correctamente (disco de datos), mientras que la segunda línea representa el contenido del disco de redundancia (disco de paridad). Tu objetivo es combinar los datos de estos dos discos usando una operación NAND. La lógica de la operación NAND se define como sigue:
 
-### Entrada
-Dos líneas binarias de igual longitud.
+0 NAND 0 = 1  
+0 NAND 1 = 1  
+1 NAND 0 = 1  
+1 NAND 1 = 0  
 
-### Salida
-Una línea binaria resultado de la operación NAND bit a bit.
+¿Puedes escribir un programa que combine los datos del disco de datos y el disco de paridad según esta operación NAND?
 
-### Ejemplo
-Entrada:
+## Entrada
+
+Se te proporcionarán dos líneas de entrada, cada una representando el contenido de uno de los discos en formato binario. Ambas líneas tendrán la misma longitud.
+
+## Salida
+
+Imprime una sola línea que represente el resultado de aplicar la operación NAND entre las dos líneas de entrada.
+
+## Ejemplo
+
+Entrada
 ```
-11001
-10110
+11001  
+10110  
 ```
-Salida:
+Salida
 ```
 01111
 ```
