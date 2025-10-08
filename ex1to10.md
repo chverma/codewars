@@ -198,31 +198,81 @@ Salida
 ## 6. Climbing And Descending
 **Puntos:** 4
 
-### Introducción
-Dado un recorrido representado por una secuencia de números, determinar si primero aumenta estrictamente y luego disminuye estrictamente (simula subir y bajar una montaña).
+# Introducción
 
-### Entrada
-- Primera línea: entero N, número de elementos.
-- Siguientes N líneas: cada una un entero positivo, los elementos de la secuencia.
+Imagina que estás en una aventura de senderismo, escalando una montaña. Tu viaje comienza en la base y asciendes de manera constante, paso a paso, hasta llegar a la cima. En la cima, te tomas un momento para disfrutar de la vista impresionante. Después, comienzas el descenso, bajando cuidadosamente por el otro lado de la montaña hasta llegar nuevamente a la base.
 
-### Salida
-"True" si cumple patrón subir y bajar, "False" en caso contrario.
+En este problema, una secuencia de números representa tu recorrido. Los números deben primero aumentar, simbolizando la subida a la montaña, y luego disminuir, simbolizando el descenso. Tu tarea es determinar si la secuencia de números sigue este patrón de subir a una cima y luego descender, tal como una caminata perfecta en la montaña. Si la secuencia cumple con este patrón, significa que subiste y bajaste con éxito la montaña. Si no, significa que tu recorrido no siguió el camino esperado.
 
-### Ejemplo
+## Entrada
+
+La entrada consiste en:  
+- La primera línea contiene un entero **N**, el número de elementos que componen el recorrido.  
+- Las siguientes **N** líneas contienen cada una un entero positivo, que representa los elementos de la secuencia.
+
+## Salida
+
+Imprime `"True"` si la secuencia primero aumenta estrictamente y luego disminuye estrictamente. De lo contrario, imprime `"False"`.
+
+## Ejemplos
+
+Ejemplo 1  
 Entrada:
 ```
-6
-1
-3
-4
-12
-10
+3  
+4  
+5  
+6  
+```
+Salida:  
+```
+False  
+```
+
+Ejemplo 2  
+Entrada: 
+```
+6  
+1  
+3  
+4  
+12  
+10  
 9
 ```
-Salida:
+Salida:  
+True  
+
+Ejemplo 3  
+Entrada:  
 ```
-True
+5  
+1  
+3  
+2  
+1  
+5
 ```
+Salida:  
+```
+False
+```
+
+Ejemplo 4  
+Entrada:  
+```
+5  
+4  
+3  
+2  
+1  
+2
+```
+Salida:  
+```
+False
+```
+
 
 
 ## 7. The Easter Bunny Problem
