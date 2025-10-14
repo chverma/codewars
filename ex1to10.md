@@ -278,15 +278,25 @@ False
 ## 7. The Easter Bunny Problem
 **Puntos:** 4
 
-### Introducción
-Determinar si un número dado de huevos puede formar un triángulo perfecto, es decir, si es un número triangular.
+# Introducción
 
-### Entrada
-- Primera línea: entero T, cantidad de casos.
-- Siguientes T líneas: número N de huevos.
+Este año, el Conejo de Pascua visitó las pirámides egipcias y quedó fascinado. Para rendirles homenaje, quiere esconder los huevos formando una figura perfectamente triangular. Esta es la idea que tiene en mente:
 
-### Salida
-Imprimir "YES" si es un número triangular, "NO" en caso contrario.
+![Piramides](images/ex_7_easter_bunny.png)
+
+Con 1 huevo, SE PUEDE formar una estructura perfectamente triangular, y con 3, y con 6, ... Pero no funcionaría con 2 huevos, ni con 4, ni con 5, … ¿Puedes ayudarle a determinar si, con un número N de huevos, puede construir lo que quiere?
+
+## Entrada
+
+La entrada consta de dos partes:
+
+- La primera parte es una línea con un solo entero T.
+- La segunda parte contiene T enteros, cada uno representando el número N de huevos a esconder.
+
+## Salida
+
+Siguiendo el mismo orden de la entrada, se deben imprimir T líneas con "YES" si el número N de huevos sirve para formar la estructura triangular, o "NO" en caso contrario.
+
 
 ### Ejemplo
 Entrada:
