@@ -282,7 +282,7 @@ False
 
 Este año, el Conejo de Pascua visitó las pirámides egipcias y quedó fascinado. Para rendirles homenaje, quiere esconder los huevos formando una figura perfectamente triangular. Esta es la idea que tiene en mente:
 
-![Piramides](images/ex_7_easter_bunny.png)
+![Piramides](easter_bunny.png)
 
 Con 1 huevo, SE PUEDE formar una estructura perfectamente triangular, y con 3, y con 6, ... Pero no funcionaría con 2 huevos, ni con 4, ni con 5, … ¿Puedes ayudarle a determinar si, con un número N de huevos, puede construir lo que quiere?
 
