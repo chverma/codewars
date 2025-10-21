@@ -26,6 +26,7 @@ Where:
 ## Interface
 
 ```python
+
 """
 This interface facilitates the creation of nested lists.
 Do not implement or make assumptions about its implementation.
