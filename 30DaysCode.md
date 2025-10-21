@@ -78,3 +78,4 @@ def weighted_depth_sum(nested_list):
 
     # Replace this placeholder return statement with your code
     return -1
+```
