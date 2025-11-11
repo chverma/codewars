@@ -318,14 +318,21 @@ NO
 ## 8. Happy Pi Day
 **Puntos:** 4
 
-### Introducción
-Dada una secuencia numérica de hasta 10 dígitos, buscar su posición en los primeros 100 decimales de Pi y devolver la posición de la primera ocurrencia o -1 si no se encuentra.
+# Introducción
 
-### Entrada
-Un número entero de hasta 10 dígitos.
+En unos días será 14 de marzo, fecha que se celebra anualmente la constante matemática
+Pi (𝜋), porque es el mes 3 seguido del día 14, que son los primeros tres dígitos de este número. Como
+sabrás, Pi es la razón entre la circunferencia de un círculo y su diámetro, y es un número decimal
+infinito. En 2021, el cálculo de Pi alcanzó hasta 100 billones de dígitos decimales. Pero no vayamos tan lejos y
+consideremos solo los primeros cien dígitos decimales:
 
-### Salida
-Posición de la primera aparición en Pi o -1 si no se encuentra.
+3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679
+
+Queremos explorar Pi y buscar secuencias numéricas específicas dentro de sus dígitos decimales. Dada una
+secuencia de números de hasta 10 dígitos, ¿puedes escribir un programa que busque esta secuencia en los
+primeros 100 dígitos decimales de Pi? Tu programa debe mostrar la posición de la primera ocurrencia de la
+secuencia en Pi, o -1 si no se encuentra la secuencia.
+
 
 ### Ejemplo
 Entrada:
